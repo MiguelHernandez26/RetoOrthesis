@@ -35,12 +35,12 @@ public class Ortopedic implements Serializable{
 
     
     @ManyToOne(optional = true)
-    @JsonIgnoreProperties(value = {"ortopedics"})
+    @JsonIgnoreProperties(value = {"ortopedic"})
     @JoinColumn(name = "category_id")
     private Category category;
     
     @OneToMany(mappedBy = "ortopedic", cascade = CascadeType.ALL)
-    @JsonIgnoreProperties(value = {"client", "ortopedics"})
+    @JsonIgnoreProperties(value = {"client", "ortopedic"})
     private Set<Message> messages = new HashSet<>();
     
     @OneToMany(mappedBy = "ortopedic", cascade = CascadeType.ALL)
