@@ -27,9 +27,11 @@ public class Category implements Serializable{
     @Column(name = "description")
     private String description;
 
+    /* 
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("category")
     private Set<Ortopedic> ortopedics = new HashSet<>();
+    */
 
     public Integer getId() {
         return Id;
