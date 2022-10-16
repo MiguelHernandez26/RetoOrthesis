@@ -10,7 +10,7 @@ import java.util.Set;
 public class ReportClient{
     private int total;
     private Client client;
-
+    /*
     public ReportClient(Client client){
         this.client = client;
         List<Reservation> arr = new ArrayList<>(client.getReservations());
@@ -25,7 +25,7 @@ public class ReportClient{
         this.client.setReservations(hSet);
         this.total = client.getReservations().size();
     }
-
+    */
     public int getTotal() {
         return total;
     }

@@ -27,7 +27,7 @@ public class Reservation implements Serializable{
     private Date devolutionDate;
     @Column(name = "status")
     private String status;
-
+    /*
     @ManyToOne(optional = false)
     @JsonIgnoreProperties(value = {"reservations"})
     @JoinColumn(name = "ortopedic_id")
@@ -37,7 +37,7 @@ public class Reservation implements Serializable{
     @JsonIgnoreProperties(value = {"message", "reservations"})
     @JoinColumn(name = "client_id")
     private Client client;
-
+    
     @Column(name = "score")
     private String score;
 
@@ -45,7 +45,7 @@ public class Reservation implements Serializable{
         this.status = "created";
         this.score = null;
     }
-
+    */
     public Integer getIdReservation() {
         return idReservation;
     }
@@ -77,7 +77,7 @@ public class Reservation implements Serializable{
     public void setStatus(String status) {
         this.status = status;
     }
-
+    /*
     public Ortopedic getOrtopedic() {
         return ortopedic;
     }
@@ -101,6 +101,5 @@ public class Reservation implements Serializable{
     public void setScore(String score) {
         this.score = score;
     }
-
-    
+    */
 }
