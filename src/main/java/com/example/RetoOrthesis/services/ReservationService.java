@@ -53,7 +53,7 @@ public class ReservationService {
                         + "}";
         return result;
     }
-    /*
+    
     public List<ReportClient> getReservationsReportClients(){
         List<ReportClient> listReportClients = new ArrayList();
         List<Client> listClients = this.clientRepository.findAll();
@@ -63,7 +63,7 @@ public class ReservationService {
         }
         return listReportClients;
     }
-    */
+    
 
 
 
