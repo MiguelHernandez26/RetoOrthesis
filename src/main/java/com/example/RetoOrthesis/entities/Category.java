@@ -57,6 +57,7 @@ public class Category implements Serializable{
         this.description = description;
     }
 
+    /*
     public Set<Ortopedic> getOrtopedics() {
         return ortopedics;
     }
@@ -64,6 +65,6 @@ public class Category implements Serializable{
     public void setOrtopedics(Set<Ortopedic> ortopedics) {
         this.ortopedics = ortopedics;
     }
-    
+    */
     
 }
