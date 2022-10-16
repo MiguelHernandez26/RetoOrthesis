@@ -46,7 +46,7 @@ public class Ortopedic implements Serializable{
     @OneToMany(mappedBy = "ortopedic", cascade = CascadeType.ALL)
     private Set<Reservation> reservations = new HashSet<>();
     
-
+////////////////////////////////////////////////////////////////////////////////////////////////
     public Integer getId() {
         return id;
     }
