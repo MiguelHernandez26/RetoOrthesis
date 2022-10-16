@@ -38,11 +38,11 @@ public class Ortopedic implements Serializable{
     @JsonIgnoreProperties(value = {"ortopedics"})
     @JoinColumn(name = "category_id")
     private Category category;
-    /*
+    
     @OneToMany(mappedBy = "ortopedic", cascade = CascadeType.ALL)
-    @JsonIgnoreProperties(value = {"client", "ortopedic"})
+    @JsonIgnoreProperties(value = {"client", "ortopedics"})
     private Set<Message> messages = new HashSet<>();
-    */
+    
     @OneToMany(mappedBy = "ortopedic", cascade = CascadeType.ALL)
     private Set<Reservation> reservations = new HashSet<>();
     
@@ -94,7 +94,7 @@ public class Ortopedic implements Serializable{
     public void setCategory(Category category) {
         this.category = category;
     }
-    /*
+    
     public Set<Message> getMessages() {
         return messages;
     }
@@ -102,7 +102,7 @@ public class Ortopedic implements Serializable{
     public void setMessages(Set<Message> messages) {
         this.messages = messages;
     }
-    */
+    
     public Set<Reservation> getReservations() {
         return reservations;
     }
